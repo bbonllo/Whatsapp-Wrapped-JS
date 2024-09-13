@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Unai Bonilla">
+    <meta name="description" content="Web site created for showing Whatsapp stats" />
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="icon" href="resources/whatsapp-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>WhatsApp Wrapped</title>
+</head>
+
+<body>
+    <header className="App-header">
+        <div className="whatsapp-header">
+            <h1 className="wa">
+                WhatsApp
+                <img src=../resources/whatsapp-logo.png alt="WhatsApp Logo" className="whatsapp-logo" />
+            </h1>
+            <h1 className="wrapped">Wrapped</h1>
+        </div>
+    </header>
+
+    <h1>Subir archivo CSV</h1>
+    <div className="file-upload-container">
+        <UploadFileOutlinedIcon sx={{ fontSize: 40 }} />
+        <label htmlFor="file-upload" className="custom-file-upload">
+            {dragging
+            ? "Soltar para cargar"
+            : "Arrastra o haz clic para elegir archivo"}
+        </label>
+        <p id="upload-file">
+            {selectedFile ? selectedFile.name : "Ningún archivo seleccionado"}
+        </p>
+        <input id="file-upload" type="file" accept=".csv" onChange={handleFileChange} hidden />
+    </div>
+    <button onClick={handleFileUpload}>Aceptar</button>
+
+    <footer>
+        <div className="footer-content">
+            <div className="author-info">
+                <h3>Hecho por Unai Bonilla</h3>
+                <p>
+                    Pequeño proyecto para mostrar las estadísticas de una conversación
+                    de WhatsApp.
+                </p>
+            </div>
+            <div className="social-links">
+                <a href="https://twitter.com/unaibonillaher" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/unai-bonilla-hernandez/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/BBonLLo" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
