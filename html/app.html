@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../css/app.css">
     <link rel="icon" href="resources/whatsapp-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,600,0,0" />
     <title>WhatsApp Wrapped</title>
 </head>
 
@@ -24,20 +25,56 @@
         </div>
     </header>
 
-    <h1>Subir archivo CSV</h1>
-    <div class="file-upload-container">
-        <span class="material-icons-outlined">upload_file</span>
-        <label htmlFor="file-upload" class="custom-file-upload">
-            {dragging
-            ? "Soltar para cargar"
-            : "Arrastra o haz clic para elegir archivo"}
-        </label>
-        <p id="upload-file">
-            {selectedFile ? selectedFile.name : "Ningún archivo seleccionado"}
-        </p>
-        <input id="file-upload" type="file" accept=".csv" onChange={handleFileChange} hidden />
-    </div>
-    <button onClick={handleFileUpload}>Aceptar</button>
+    <main>
+        <div class="title">
+            <h1>Subir archivo CSV</h1>
+            <div class="file-upload-container">
+                <span class="material-symbols-outlined">
+                    upload_file
+                </span>
+                <label class="custom-file-upload" htmlFor="file-upload">
+                    Drag or click to choose a file
+                </label>
+                <p id="uploaded-file">
+                    No file selected
+                </p>
+                <input id="file-upload" type="file" accept=".csv" onChange={handleFileChange} hidden />
+            </div>
+            <button onClick={handleFileUpload}>Aceptar</button>
+        </div>
+
+        <div class="how-to">
+            <h2>Get Started</h2>
+            <hr>
+            <div class="howto-content">
+                <div class="howto-text">
+                    <p>WhatsApp Wrapped gives you a summary of your chat with another person!</p>
+
+                </div>
+                <div class="howto-imgs">
+                    <p>To try it, simply open WhatsApp on your phone and click on one of your contacts.
+                        <br> Then click on <span id="bolded"> Export Chat &gt; Without Media</span>
+                    </p>
+                    <div class="images">
+                        <img src="export2.jpg" alt="">
+                        <span id="arrow" class="material-icons-outlined">
+                            arrow_forward
+                        </span>
+                        <img src="media2.jpg" alt="">
+                    </div>
+                </div>
+                <p>Then simply upload the .txt file to this page and click submit!</p>
+            </div>
+        </div>
+
+        <div class="sample">
+            <h2>Just looking around?</h2>
+            <hr>
+            <p>Check out the output of a <a id="samp" href="#">sample chat</a></p>
+        </div>
+    </main>
+
+
 
     <footer>
         <div class="footer-content">
