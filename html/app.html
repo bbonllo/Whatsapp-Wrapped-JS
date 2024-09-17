@@ -38,6 +38,14 @@
                 <p id="uploaded-file">
                     No file selected
                 </p>
+                <div id="disclaim">
+                    <div id="data" aria-describedby="tooltip"><span class="material-symbols-outlined" id="help-icon">help_outline</span> What happens to my data?</div>
+                    <div id="tooltip" class="hidden" role="tooltip" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(559px, 1121px);">
+                      We do not see or store your data, it is processed and stored right here in your browser, and cleared when you close the page.
+                      Feel free to check out <a href="https://github.com/bbonllo/WhatsApp-Wrapped-JS" target="_blank" class="hidden">our code</a> for peace of mind.
+                      <div id="p-arrow" class="hidden" data-popper-arrow="" style="position: absolute; left: 0px; transform: translate(113px, 0px);"></div>
+                    </div>
+                  </div>
                 <input id="file-upload" type="file" accept=".csv" onChange={handleFileChange} hidden />
             </div>
             <button onClick={handleFileUpload}>Aceptar</button>
@@ -48,27 +56,18 @@
             <hr>
             <div class="howto-content">
                 <div class="howto-text">
-                    <p>WhatsApp Wrapped gives you a summary of your chat with another person!</p>
-
+                    <p>WhatsApp Wrapped te muestra las estadisticas de tu chat con otra persona</p>
                 </div>
                 <div class="howto-imgs">
-                    <p>To try it, simply open WhatsApp on your phone and click on one of your contacts.
-                        <br> Then click on <span id="bolded"> Export Chat &gt; Without Media</span>
+                    <p>Comming soon...
                     </p>
-                    <div class="images">
-                        <img src="export2.jpg" alt="">
-                        <span id="arrow" class="material-icons-outlined">
-                            arrow_forward
-                        </span>
-                        <img src="media2.jpg" alt="">
-                    </div>
                 </div>
-                <p>Then simply upload the .txt file to this page and click submit!</p>
+                <p>Finalmente sube el archivo .csv a esta página y haz clic en Aceptar</p>
             </div>
         </div>
 
         <div class="sample">
-            <h2>Just looking around?</h2>
+            <h2>Solo mirando?</h2>
             <hr>
             <p>Check out the output of a <a id="samp" href="#">sample chat</a></p>
         </div>
