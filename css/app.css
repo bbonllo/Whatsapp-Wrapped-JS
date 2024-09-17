@@ -116,6 +116,35 @@ button:hover,
   background-color: #3a9a44;
 }
 
+#disclaim {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+#data {
+  font-size: 1rem;
+  color: #30ab3f;
+  display: flex;
+}
+
+#tooltip {
+  background: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem;
+  border-radius: 5px;
+  max-width: 220px;
+  text-align: center;
+}
+
+#tooltip[data-popper-placement^='bottom'] > #p-arrow {
+  top: -4px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 /** How to **/
 .how-to {
   display: flex;
