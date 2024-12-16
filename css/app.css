@@ -11,7 +11,7 @@ body {
   align-items: center;
   font-family: "DM Sans", sans-serif;
   font-size: large;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -38,6 +38,34 @@ body {
   width: 50px;
   height: 50px;
   margin-left: 5px;
+}
+
+a:link {
+  color: #30ab3f;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:visited {
+  color: #30ab3f;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #005d4b;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:active {
+  color: #30ab3f;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 
